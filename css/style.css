@@ -155,10 +155,15 @@
         min-height: 500px;
     }
     
+    .header-carousel .owl-carousel-item picture,
     .header-carousel .owl-carousel-item img {
-        position: absolute;
+        display: block;
         width: 100%;
         height: 100%;
+    }
+
+    .header-carousel .owl-carousel-item img {
+        position: absolute;
         object-fit: cover;
     }
 
@@ -172,6 +177,21 @@
         font-size: 30px;
         font-weight: 600;
     }
+}
+
+.header-carousel .owl-carousel-item picture,
+.header-carousel .owl-carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-carousel .overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 53, 53, 0.7);
 }
 
 .header-carousel .owl-nav {
